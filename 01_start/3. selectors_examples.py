@@ -23,6 +23,11 @@ XPAth: page.locator("//*[@class='new-todo']").click()
 CSS: page.locator(".new-todo").click()
 XPAth: page.locator("//*[@class='new-todo']").click()
 
+4. Search by attribute
+CSS: page.locator("[placeholder='Your email address']").click()
+XPAth: page.locator("//*[@placeholder='Your email address']").click()
+
+
 
 """
 
