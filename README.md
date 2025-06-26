@@ -109,3 +109,47 @@ pytest --video=retain-on-failure
 ```bash
 pytest --screenshot=on
 ```
+
+# Run test in DEBUG mode:
+```bash
+PWDEBUG=1 pytest -k 'test_todo'
+```
+or we can read a API logs from Playwright, need to use DEBUG=pw:api
+```bash
+DEBUG=pw:api
+```
+
+
+# Get UI element using built-in Playwright locators
+1. in DevTools -> Console, you can past 
+```bash
+playwright.getByPlaceholder("What needs to be done?")
+```
+2. Or using using "playwright.inspect(selector)"
+3. Generate locator "playwright.generateLocator($0)"
+
+
+# Install allure 
+```bash
+pip install allure-pytest
+```
+
+# Run tests and generating allure report:
+```bash
+pytest --alluredir=reports
+```
+or add to pytest.ini
+```
+[pytest]
+addopts = --alluredir=reports
+```
+
+Generate allure report from a raw data (need to delete existing allure-report directory)
+```bash
+allure generate reports
+```
+
+Open allure report from a generated report
+```bash
+allure open
+```
