@@ -1,3 +1,29 @@
+# 🎭 Playwright Practice with Python
+
+[![Playwright Tests](https://github.com/rzaqa/playwright_practice/actions/workflows/python-app.yml/badge.svg)](https://github.com/rzaqa/playwright_practice/actions)
+
+This repository is a personal learning project focused on using [Playwright](https://playwright.dev/python/) with Python for end-to-end (E2E) testing.  
+It covers structured examples from basics to more advanced patterns like Page Object Model (POM), assertions, and GitHub Actions integration.
+
+[Allure report](https://rzaqa.github.io/playwright_practice/5/index.html#)
+
+---
+
+## 📁 Project Structure
+```
+playwright_practice/
+├── 01_intro/ # Basic Playwright usage
+├── 02_actions_with_elements/ # Working with UI elements
+├── 03_assertions/ # Various assertion techniques
+├── 04_pom/ # Page Object Model structure
+│ ├── pages/
+│ └── tests/
+├── requirements.txt
+├── conftest.py
+└── .github/workflows/ # CI pipeline with GitHub Actions
+```
+
+
 # Create virtual environment with venv
 ```bash
 python3 -m venv venv
@@ -134,7 +160,7 @@ playwright.getByPlaceholder("What needs to be done?")
 pip install allure-pytest
 ```
 
-# Run tests and generating allure report:
+# Run tests and generating allure report locally:
 ```bash
 pytest --alluredir=reports
 ```
