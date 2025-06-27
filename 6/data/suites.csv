@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"Check that user is able to authenticate using a valid username and valid password","617","Authorisation with correct credentials","04_pom.tests","Fri Jun 27 08:33:41 GMT 2025","passed","Fri Jun 27 08:33:42 GMT 2025","","test_login","",""
+"Check that user is able to authenticate using a valid username and valid password","368","Authorisation with correct credentials","04_pom.tests","Fri Jun 27 08:33:42 GMT 2025","passed","Fri Jun 27 08:33:42 GMT 2025","","test_login","",""
+"Check that user is NOT able to authenticate using a invalid username and invalid password","294","Authorisation with a wrong credentials","04_pom.tests","Fri Jun 27 08:33:42 GMT 2025","passed","Fri Jun 27 08:33:42 GMT 2025","","test_login","",""
